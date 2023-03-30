@@ -6,15 +6,17 @@ import { Tab2Page } from './tab2.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
+import { ProjectComponentModule } from "../projects/component/project-component/project-component.module";
 
 @NgModule({
-  imports: [
-    IonicModule,
-    CommonModule,
-    FormsModule,
-    ExploreContainerComponentModule,
-    Tab2PageRoutingModule
-  ],
-  declarations: [Tab2Page]
+    declarations: [Tab2Page],
+    imports: [
+        IonicModule,
+        CommonModule,
+        FormsModule,
+        ExploreContainerComponentModule,
+        Tab2PageRoutingModule,
+        ProjectComponentModule
+    ]
 })
 export class Tab2PageModule {}

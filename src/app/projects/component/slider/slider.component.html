@@ -1,0 +1,7 @@
+<ion-slides pager="true" [options]="slideOpts">
+  <ion-slide *ngFor="let i of sliderInputValue" (click)="sliderClickEventTrigger(i.modelItem)">
+    <img [ngClass]="{'ion-hide': isSmallSizeScreen ? true : false }" src="{{i.image}}">
+    <img [ngClass]="{'ion-hide': !isSmallSizeScreen ? true : false }" src="{{i.posterPath}}">
+    <h2 class="ion-hide-x1 text-content">{{i.title}}</h2>
+  </ion-slide>
+</ion-slides>
